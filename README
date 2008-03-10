@@ -1,7 +1,10 @@
 RSpec Haml Scaffold Generator
 ====
 
-This acts just like any other scaffold generator for Rails except it uses RSpec instead of test/unit and HAML instead of erb.
+This is an uber version of the RSpec Scaffold Generator, the following things have been added:
+
+Support for Haml instead of erb
+Nested routes (nested tests/migrations)
 
 Examples:
 
