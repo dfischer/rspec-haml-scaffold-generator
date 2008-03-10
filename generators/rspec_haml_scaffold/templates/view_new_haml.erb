@@ -1,0 +1,15 @@
+%h1
+  New <%= singular_name %>
+
+= error_messages_for :<%= singular_name %> 
+
+-form_for(<%= form_link_for(table_name, singular_name) %>) do |f| 
+<% for attribute in attributes -%>
+  %p
+    %b= attribute.column.human_name 
+    %br
+    = f.<%= attribute.field_type %> :<%= attribute.name %> 
+<% end %>
+  %p
+    = f.submit "Create"
+= link_to 'Back', <%= path_for(table_name, singular_name, "index") %> 

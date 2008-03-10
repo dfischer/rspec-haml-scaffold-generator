@@ -1,0 +1,9 @@
+<% for attribute in attributes -%>
+%p
+  %b= attribute.column.human_name %>:
+  =h @<%= singular_name %>.<%= attribute.name %> 
+
+<% end -%>
+
+= link_to 'Edit', <%= path_for(table_name, singular_name, "edit") %>
+= link_to 'Back', <%= path_for(table_name, singular_name, "index") %>

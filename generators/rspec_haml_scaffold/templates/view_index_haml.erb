@@ -1,0 +1,22 @@
+%h1
+  Listing <%= plural_name %>
+
+%table
+  %tr
+<% for attribute in attributes -%>
+    %th= <%=attribute.column.human_name%>
+<% end -%>
+
+-for <%= singular_name %> in @<%= plural_name %>
+  %tr
+  <% for attribute in attributes -%>
+    %td=h <%= singular_name %>.<%= attribute.name %>
+  <% end %>
+  
+    %td= link_to 'Show', <%= path_for(table_name, singular_name, "show").gsub(/@/, "") %>
+    %td= link_to 'Edit', <%= path_for(table_name, singular_name, "edit").gsub(/@/, "") %>
+    %td= link_to 'Destroy', <%= path_for(table_name, singular_name, "destroy").gsub(/@/, "") %>
+
+
+
+= link_to 'New <%= singular_name.singularize %>', new_<%= table_name.singularize %>_path 
