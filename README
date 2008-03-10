@@ -1,1 +1,9 @@
-blhal balhsljaslbas
+RSpec Haml Scaffold Generator
+====
+
+This acts just like any other scaffold generator for Rails except it uses RSpec instead of test/unit and HAML instead of erb.
+
+Examples:
+
+  ./script generate scaffold post # no attributes, view will be anemic
+  ./script generate scaffold post attribute:string attribute:boolean
