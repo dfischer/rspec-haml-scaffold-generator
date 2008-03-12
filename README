@@ -8,5 +8,5 @@ Nested routes (nested tests/migrations)
 
 Examples:
 
-  ./script generate scaffold post # no attributes, view will be anemic
-  ./script generate scaffold post attribute:string attribute:boolean
+  ./script generate rspec_haml_scaffold post # no attributes, view will be anemic
+  ./script generate rspec_haml_scaffold post attribute:string attribute:boolean # this is actually broken at the moment, don't do this !!! Feel free to patch it
