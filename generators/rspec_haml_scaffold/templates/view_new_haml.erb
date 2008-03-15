@@ -5,7 +5,7 @@
 - form_for(<%= form_link_for(table_name, singular_name) %>) do |f| 
 <% for attribute in attributes -%>
   %p
-    %b= attribute.column.human_name 
+    %b <%= attribute.column.human_name %>
     %br
     = f.<%= attribute.field_type %> :<%= attribute.name %> 
 <% end %>
