@@ -7,7 +7,7 @@ Support for Haml instead of erb
 Nested routes (nested tests/migrations)
 
 Installation:
-  sudo gem install rspec-haml-scaffold
+  sudo gem install zachinglis-rspec-haml-scaffold
 
 Examples:
 
