@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rspec-haml-scaffold-generator}
-  s.version = "0.0.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Zach Inglis", "Daniel Fischer"]
@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.rdoc",
     "Rakefile",
+    "VERSION.yml",
     "generators/USAGE",
     "generators/rspec_haml_scaffold/rspec_haml_scaffold_generator.rb",
     "generators/rspec_haml_scaffold/templates/INSTALL",
@@ -33,20 +34,13 @@ Gem::Specification.new do |s|
     "generators/rspec_haml_scaffold/templates/view_edit_haml.erb",
     "generators/rspec_haml_scaffold/templates/view_index_haml.erb",
     "generators/rspec_haml_scaffold/templates/view_new_haml.erb",
-    "generators/rspec_haml_scaffold/templates/view_show_haml.erb",
-    "lib/rspec_haml_scaffold_generator.rb",
-    "test/rspec_haml_scaffold_generator_test.rb",
-    "test/test_helper.rb"
+    "generators/rspec_haml_scaffold/templates/view_show_haml.erb"
   ]
   s.homepage = %q{http://github.com/zachinglis/rspec-haml-scaffold-generator}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.3}
   s.summary = %q{Generate RSpec/HAML scaffolds.}
-  s.test_files = [
-    "test/rspec_haml_scaffold_generator_test.rb",
-    "test/test_helper.rb"
-  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
