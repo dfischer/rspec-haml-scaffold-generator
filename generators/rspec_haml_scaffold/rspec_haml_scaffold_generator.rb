@@ -29,7 +29,7 @@ class RspecHamlScaffoldGenerator < Rails::Generator::NamedBase
     end
 
     @resource_generator = "rspec_haml_scaffold"
-    @default_file_extension = "haml"
+    @default_file_extension = "html.haml"
     @resource_edit_path = "/edit"
     
 
@@ -86,7 +86,7 @@ class RspecHamlScaffoldGenerator < Rails::Generator::NamedBase
       # Model class, unit test, and fixtures.
       m.template 'rspec_haml_scaffold:model.rb',      File.join('app/models', "#{@controller_singular_name.singularize}.rb")
       m.template 'model:fixtures.yml',  File.join('spec/fixtures', "#{@controller_singular_name}.yml")
-      m.template 'rspec_haml_scaffold:model_spec.rb',       File.join('spec/models', "#{@controller_singular_name}_spec.rb")
+      m.template 'rspec_haml_scaffold:model_spec.rb',       File.join('spec/models', "#{@controller_singular_name.singularize}_spec.rb")
 
       # View specs
       m.template "rspec_haml_scaffold:edit_haml_spec.rb",
